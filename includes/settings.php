@@ -20,6 +20,24 @@ function rpi_settings_page()
 			<?php if ( false !== $_REQUEST['updated'] ) : ?>
 			<div class="updated fade"><p><strong><?php _e( 'Options saved', 'bbp-profile-information'); ?> ); ?></strong></p></div>
 			<?php endif; ?>
+			
+			<table class="form-table">
+			<tr>
+		
+		<td>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9NKN2K8SXGS9Q">
+<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+</form>
+</td><td>
+<?php _e("If you find this plugin useful, please consider donating just a couple of pounds to help me develop and maintain it. You support will be appreciated", 'bbp-last-post'); ?>
+		
+	</td>
+	</tr>
+	</table>			
+			
 			<form method="post" action="options.php">
 
 				<?php settings_fields( 'rpi_settings_group' ); ?>
@@ -27,28 +45,28 @@ function rpi_settings_page()
 				<table class="form-table">
 					
 					<tr valign="top">
-						<th colspan="2"><p> This plugin allows you to set up to 4 user profile fields and add these to the profile display.
+						<th colspan="2"><font size="2" color="grey" >This plugin allows you to set up to 4 user profile fields and add these to the profile display.
 						<br> Users can populate these fields using their profile edit. 
 						<br>Additionally you can set these fields to display under the authors name and avatar in topics and replies.
 						<br> So for Instance you can set a label with a name of City.  Users can then add their city in their profile, and other users will then see their location on accessing their profile.  
 						<br>If show item is set, then this also displays under the authors name on topics and replies eg 'Atlanta'
-						<br> If show label is also set them both the label and content will display under the authors name on topics and replies eg 'City ; Atlanta' </p></th>
+						<br> If show label is also set them both the label and content will display under the authors name on topics and replies eg 'City ; Atlanta' </th>
 						
 					</tr>
 					
 					<tr valign="top">
-						<th colspan="2"><p> Name : Name the field
+						<th colspan="2">Name : Name the field
 						<br> Activate : check this to add the item to profile, un-check to hide (user data is not lost)  
 						<br>Show label : check to display the label under the authors name and avatar in topics and replies.
-						<br>Show Item : check to display the user set data under the authors name and avatar in topics and replies.
-						</p></th>
+						<br>Show Item : check to display the user set data under the authors name and avatar in topics and replies.</font>
+						</th>
 						
 					</tr>
 
 					
 					<!-------------------------------Label1 ---------------------------------------->
 					<tr valign="top">
-						<th colspan="2"><h3><?php _e('Label 1', 'bbp-profile-information'); ?></h3></th>
+						<th colspan="2"><h4><?php _e('Label 1', 'bbp-profile-information'); ?></h4></th>
 					</tr>
 					<tr valign="top">
 					<th><?php _e('Name', 'bbp-profile-information'); ?></th>
@@ -86,7 +104,7 @@ function rpi_settings_page()
 					
 					<!------------------------------- Label2 ------------------------------------------>
 					<tr valign="top">
-						<th colspan="2"><h3><?php _e('Label 2', 'bbp-profile-information'); ?></h3></th>
+						<th colspan="2"><h4><?php _e('Label 2', 'bbp-profile-information'); ?></h4></th>
 					</tr>
 					<tr valign="top">
 						<th><?php _e('Name', 'profile-information'); ?></th>
@@ -124,7 +142,7 @@ function rpi_settings_page()
 					
 					<!------------------------------- Label3 ------------------------------------------>
 					<tr valign="top">
-						<th colspan="2"><h3><?php _e('Label 3', 'bbp-profile-information'); ?></h3></th>
+						<th colspan="2"><h4><?php _e('Label 3', 'bbp-profile-information'); ?></h4></th>
 					</tr>
 					<tr valign="top">
 						<th><?php _e('Name', 'profile-information'); ?></th>
@@ -160,7 +178,7 @@ function rpi_settings_page()
 				
 				<!------------------------------- Label 4 ------------------------------------------>
 					<tr valign="top">
-						<th colspan="2"><h3><?php _e('Label 4', 'bbp-profile-information'); ?></h3></th>
+						<th colspan="2"><h4><?php _e('Label 4', 'bbp-profile-information'); ?></h4></th>
 					</tr>
 					<tr valign="top">
 						<th><?php _e('Name', 'profile-information'); ?></th>
