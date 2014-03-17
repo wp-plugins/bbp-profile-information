@@ -3,7 +3,7 @@
 Plugin Name: bbp profile information
 Plugin URL: http://www.rewweb.co.uk/bbp-profile-information/
 Description: adds up to 4 fields to the bbp user profile and displays any combination of these under the authors avatar in topics and replies
-Version: 1.1
+Version: 1.0
 Author: Robin Wilson
 Author URI: http://www.rewweb.co.uk/
 Contributors: Parts of code adapted from Pippin's Restrict Content plugin, with thanks.
