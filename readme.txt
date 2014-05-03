@@ -25,7 +25,7 @@ The web administrator sets up the field names, and the forum users populate thei
 In fact up to 4 pieces of information that your forum users might want to display.
 
 
-Works with wordpress 3.8.1 and bbpress 2.5.3
+Works with bbpress 2.5.3
 
 
 
